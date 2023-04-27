@@ -1,0 +1,36 @@
+version control:
+
+1. track changes
+2. Redo my changes or I can go back to any specific version
+3. Retrive the accidently deleted files
+
+
+WD --> ls -l
+SA/LR --> git ls-files
+To Confirm SA or LR --> git status
+
+
+WD --> git add --> Staging Area --> git commit --> Local Repository --> git push --> Remote Repository
+
+
+why git branching?
+ - to manage multiple modules/work in the same repo
+ - For the bug fixes
+ - for any new activity
+ 
+ git branch --> list the branch
+ git branch b1 master --> create b1 branch --> b1 will have all the coommits of master
+ git checkout b1
+ 
+ -------------------------
+ 
+ git checkout -b b2 master --> create b2 branch and checkout
+ 
+ 
+ Merge --> feature branch --> Master branch
+ Feature branches means any branch but master
+ 
+ Rebase --> Arranging the log history in the linear fashion.  master branch --> feature branches
+ Golden Rule --> Before you do a commit in a feature branch, Rebase first
+ 
+To check the linear/parallel development --> git log --graph --pretty=oneline
